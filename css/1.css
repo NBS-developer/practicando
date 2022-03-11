@@ -524,7 +524,7 @@ body {
             
             @media screen and (max-width: 576px) {
                 .pasos {
-                    width: 80%;
+                    width: 83%;
                 }
             }
             
@@ -1632,7 +1632,7 @@ body {
                     width: 100%;
                 }
                 .imgsumary img {
-                    width: 100%;
+                    width: 98%;
                 }
                 .textofooter {
                     display: flex;
