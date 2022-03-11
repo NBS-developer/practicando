@@ -815,6 +815,24 @@ body {
                 max-width: 300px;
             }
             
+            @media screen and (max-width: 576px) {
+                div.card {
+                    max-width: 500px;
+                    width: 100%;
+                }
+                div.card .card__image {
+                    max-width: 500px;
+                    width: 100%;
+                }
+                div.card .card__image:hover {
+                    width: 576px;
+                    margin-bottom: -20px;
+                    margin-left: 40px;
+                    transition: all 0.19s 0s ease-out;
+                    cursor: pointer;
+                }
+            }
+            
             div.card img:hover {
                 max-width: 400px;
                 margin-bottom: -40px;
