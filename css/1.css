@@ -1777,7 +1777,14 @@ body {
                 }
                 .nove {
                     display: grid;
-                    grid-template-rows: 48% 48%;
+                    grid-template-rows: 45% 45%;
                     grid-template-areas: "a b" "c d";
+                }
+                .noved {
+                    width: 100%;
+                    margin: auto;
+                }
+                .novedad {
+                    margin: auto;
                 }
             }
