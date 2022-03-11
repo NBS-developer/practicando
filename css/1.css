@@ -1436,6 +1436,13 @@ body {
             /*fin slider*/
             /* footer*/
             
+            @media screen and (max-width: 576px) {
+                .redes .icon {
+                    width: 141px;
+                    height: 141px;
+                }
+            }
+            
             .redes {
                 display: flex;
                 justify-content: space-evenly;
