@@ -1787,4 +1787,7 @@ body {
                 .novedad {
                     margin: auto;
                 }
+                .novedad img {
+                    width: 77%;
+                }
             }
