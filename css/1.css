@@ -1438,12 +1438,13 @@ body {
             
             @media screen and (max-width: 576px) {
                 .redes img {
-                    width: 60px;
-                    height: 40px;
+                    display: none;
+                    width: 50px;
+                    height: 30px;
                 }
                 .redes svg {
-                    width: 141px;
-                    height: 141px;
+                    width: 151px;
+                    height: 151px;
                 }
             }
             
