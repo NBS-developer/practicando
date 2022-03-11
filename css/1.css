@@ -522,6 +522,12 @@ body {
                 width: 220px;
             }
             
+            @media screen and (max-width: 576px) {
+                .pasos {
+                    width: 80%;
+                }
+            }
+            
             .pasos p:hover {
                 color: #fafafa;
                 cursor: pointer;
@@ -1444,6 +1450,7 @@ body {
             }
             
             .redes {
+                height: 120px;
                 display: flex;
                 justify-content: space-evenly;
                 border-bottom: 1px solid #999;
@@ -1618,6 +1625,15 @@ body {
             }
             
             @media screen and (max-width:576px) {
+                .imgsumary {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+                .imgsumary img {
+                    width: 100%;
+                }
                 .textofooter {
                     display: flex;
                     flex-direction: column;
