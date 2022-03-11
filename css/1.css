@@ -1437,8 +1437,9 @@ body {
             /* footer*/
             
             @media screen and (max-width: 576px) {
-                .redes {
-                    height: 120px;
+                .redes img {
+                    width: 60px;
+                    height: 40px;
                 }
                 .redes svg {
                     width: 141px;
