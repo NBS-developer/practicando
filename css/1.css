@@ -1437,11 +1437,6 @@ body {
             /* footer*/
             
             @media screen and (max-width: 576px) {
-                .redes img {
-                    display: none;
-                    width: 50px;
-                    height: 30px;
-                }
                 .redes svg {
                     width: 151px;
                     height: 151px;
@@ -1686,4 +1681,9 @@ body {
                     row-gap: 20px;
                     padding-bottom: 20px;
                 }
+            }
+            
+            .logofinal {
+                display: block;
+                margin: 20px auto;
             }
