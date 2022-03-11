@@ -659,9 +659,10 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-around;
-                    height: 120px;
+                    height: 170px;
                 }
                 .primera img {
+                    padding: 22px;
                     width: 280px;
                     margin: 0 auto;
                     border-bottom: 1px solid #990000;
@@ -674,8 +675,9 @@ body {
                     justify-content: space-around;
                 }
                 .primera2 svg {
-                    width: 77px;
-                    height: 77px;
+                    padding-bottom: 2px;
+                    width: 111px;
+                    height: 111px;
                 }
                 .ofertas {
                     flex-direction: column;
