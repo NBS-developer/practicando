@@ -381,6 +381,10 @@ body {
             }
             /*FIN MENU*/
             
+            .primera svg :hover {
+                stroke: rgb(255, 255, 255);
+            }
+            
             .primera {
                 display: flex;
                 justify-content: space-evenly;
@@ -1151,6 +1155,7 @@ body {
             
             .fot {
                 display: flex;
+                justify-content: space-evenly;
             }
             
             .social-icon {
@@ -1459,6 +1464,10 @@ body {
             }
             /*fin slider*/
             /* footer*/
+            
+            .redes svg:hover {
+                stroke: rgb(255, 255, 255);
+            }
             
             @media screen and (max-width: 576px) {
                 .redes svg {
