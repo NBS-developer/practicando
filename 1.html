@@ -8,7 +8,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/111.css">
     <title>NBS.STYLES Sublimados-Remeras</title>
 
 
@@ -356,129 +356,72 @@
         <!--FIN MENU-->
     </header>
 
-    <img id="anime" class="imasim" src="imagenes/anime/fondoanime.png" width="300px">
+    <img id="anime" class="imasim" src="imagenes/anime/fondo.png" width="300px">
 
     <h2> <span>ANIME Remeras</span></h2>
 
+
     <div class="container1">
 
+
         <div class="row">
-
             <div class="column">
                 <div class="card1">
                     <div class="content">
                         <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/4.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/4.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/10.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                            <img class="profile" width="250" height="250" src="imagenes/anime/2.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
                         </div>
                         <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/1.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/2.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/2.png">
+                                    <input type="hidden" name="oferta" value="no">
+
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -493,144 +436,6 @@
 
 
 
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/100.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/100.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container1">
-
-
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/3.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/3.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
             <div class="column">
@@ -638,52 +443,58 @@
                     <div class="content">
                         <div class="front">
                             <img class="profile" width="250" height="250" src="imagenes/anime/1.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
                         </div>
                         <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/1.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/1.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/1.png">
+                                    <input type="hidden" name="oferta" value="no">
+
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -695,6 +506,221 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/4.png" alt="Messi">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
+                        </div>
+                        <div class="back from-bottom">
+
+                            <h2 class="tituloin">ANIMÉ</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/4.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/4.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+
+
+            <div class="column">
+                <div class="card1">
+
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/7.png" alt="Neymar">
+                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">Harry Potter</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/7.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/7.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/5.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">COBRA KAI</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/5.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/5.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
@@ -705,53 +731,57 @@
                     <div class="content">
                         <div class="front">
                             <img class="profile" width="250" height="250" src="imagenes/anime/6.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp HOMERO</h2>
                         </div>
-                        <div class="back from-right">
+                        <div class="back from-bottom">
 
                             <h2 class="tituloin">DRAGON BALL</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/6.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/6.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/6.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
 
+                            </p>
+                            </form>
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -763,6 +793,7 @@
                     </div>
                 </div>
             </div>
+
 
 
         </div>
@@ -770,131 +801,73 @@
 
 
 
+    <br>
 
-    <!--fin del 1 al 6-->
-    <!-- 7 al 12-->
+
 
 
 
     <div class="container1">
 
+
         <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/7.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/7.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <div class="column">
                 <div class="card1">
                     <div class="content">
                         <div class="front">
                             <img class="profile" width="250" height="250" src="imagenes/anime/8.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
                         </div>
                         <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/8.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/8.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/8.png">
+                                    <input type="hidden" name="oferta" value="no">
+
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -906,6 +879,80 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/3.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/3.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/3.png">
+                                    <input type="hidden" name="oferta" value="no">
+
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
@@ -918,51 +965,55 @@
                             <img class="profile" width="250" height="250" src="imagenes/anime/9.png" alt="Messi">
                             <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
                         </div>
-                        <div class="back from-right">
+                        <div class="back from-bottom">
 
-                            <h2 class="tituloin">DRAGON BALL</h2>
+                            <h2 class="tituloin">ANIMÉ</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/9.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/9.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/9.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
 
+                            </p>
+                            </form>
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -974,72 +1025,68 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!--fin del 7 al 12-->
 
 
+            <br>
+            <br>
 
 
-
-
-    <div class="container1">
-
-
-        <div class="row">
 
             <div class="column">
                 <div class="card1">
+
                     <div class="content">
                         <div class="front">
                             <img class="profile" width="250" height="250" src="imagenes/anime/10.png" alt="Neymar">
                             <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
                         </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">Harry Potter</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/10.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/10.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/10.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
+
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -1051,7 +1098,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="column">
                 <div class="card1">
@@ -1061,49 +1107,54 @@
                             <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
                         </div>
                         <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
+                            <h2 id="2" class="tituloin">COBRA KAI</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/11.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/11.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/11.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -1115,6 +1166,7 @@
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -1125,53 +1177,57 @@
                     <div class="content">
                         <div class="front">
                             <img class="profile" width="250" height="250" src="imagenes/anime/12.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp HOMERO</h2>
                         </div>
-                        <div class="back from-right">
+                        <div class="back from-bottom">
 
                             <h2 class="tituloin">DRAGON BALL</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/12.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/12.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/12.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
 
+                            </p>
+                            </form>
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -1183,6 +1239,9 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 
@@ -1193,123 +1252,65 @@
 
     <div class="container1">
 
+
         <div class="row">
-
             <div class="column">
                 <div class="card1">
                     <div class="content">
                         <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/13.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/13.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/14.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                            <img class="profile" width="250" height="250" src="imagenes/anime/13.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
                         </div>
                         <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/14.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/13.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/13.png">
+                                    <input type="hidden" name="oferta" value="no">
+
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
                             </p>
+                            </form>
 
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -1330,128 +1331,346 @@
                 <div class="card1">
                     <div class="content">
                         <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/15.png" alt="Messi">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/16.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp ANIMÉ</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">ANIMÉ</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/16.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/16.png">
+                                    <input type="hidden" name="oferta" value="no">
+
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/14.png" alt="Messi">
                             <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
                         </div>
-                        <div class="back from-right">
+                        <div class="back from-bottom">
+
+                            <h2 class="tituloin">ANIMÉ</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/14.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/14.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+
+
+            <div class="column">
+                <div class="card1">
+
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/7.png" alt="Neymar">
+                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">Harry Potter</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/7.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/7.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/5.png" alt="Ronaldo">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
+                        </div>
+                        <div class="back from-bottom">
+                            <h2 id="2" class="tituloin">COBRA KAI</h2>
+                            <h3>PRECIO :<del>$ 1700</del> </h3>
+                            <h3>AHORA | $ 1400</h3>
+                            <div class="fot">
+                                <img class="tem-img" src="imagenes/anime/5.png" width="90" alt="">
+
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/5.png">
+                                    <input type="hidden" name="oferta" value="no">
+                                    <br>
+
+                                    <label for="cars">Elegí color:</label>
+
+                                    <select name="color">
+
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
+                            </div>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
+
+                            </p>
+                            </form>
+
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+
+                                <!--<a href="">
+                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
+                                </a> -->
+
+
+                                <li><a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="column">
+                <div class="card1">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="250" height="250" src="imagenes/anime/6.png" alt="Messi">
+                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp HOMERO</h2>
+                        </div>
+                        <div class="back from-bottom">
 
                             <h2 class="tituloin">DRAGON BALL</h2>
                             <h3>PRECIO :<del>$ 1700</del> </h3>
                             <h3>AHORA | $ 1400</h3>
                             <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/15.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
+                                <img class="tem-img" src="imagenes/anime/6.png" width="90" alt="">
 
-                                <form>
+
+                                <form class="form1" method="get" action="1.php">
+
+                                    <input type="hidden" name="remera" value="ANIMÉ">
+                                    <input type="hidden" name="foto" value="imagenes/anime/6.png">
+                                    <input type="hidden" name="oferta" value="no">
                                     <br>
 
-                                    <label for="cars">Elegí:</label>
+                                    <label for="cars">Elegí color:</label>
 
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
+                                    <select name="color">
 
-</select>
-                                </form>
+                                        <option value="BLANCO">BLANCO</option>
+                                        <option value="NEGRO">NEGRO</option>
+                                        <option value="ROJO">ROJO</option>
+                                    </select><br><br> &nbsp; &nbsp;
+                                    <label>Elegí talle:</label>
+                                    <select name="talle">
+                                        <option>Talle </option>
+                                        <option value="s">Talle s </option>
+                                        <option value="m">Talle m</option>
+                                        <option value="l">Talle l</option>
+                                        <option value="xl">Talle xl</option>
+                                        <option value="xxl">Talle xxl</option>
+                                        <option value="xxxl">Talle xxxl</option>
+
+                                    </select>
                             </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
+                            <p>
+                                <input class="des " type="submit" value="&nbsp Hace clik para calcular Precio &nbsp">
 
+                            </p>
+                            </form>
                             <ul class="social-icon">
                                 <li><a href=""><i class="fab fa-facebook-f"></i></a>
                                 </li>
 
 
-                                <a href="">
+                                <!--<a href="">
                                     <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <div class="container1">
-
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/16.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/16.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
+                                </a> -->
 
 
                                 <li><a href=""><i class="fab fa-instagram"></i></a>
@@ -1464,983 +1683,10 @@
                 </div>
             </div>
 
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/18.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
-                        </div>
-                        <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/18.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/17.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/17.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
         </div>
     </div>
-
-
-
-    <!--corteeeeeeeeeeeeeeeeeee-->
-
-
-
-
-    <div class="container1">
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/22.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/22.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/33.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
-                        </div>
-                        <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/33.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/55.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/55.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container1">
-
-
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/66.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/66.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/99.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
-                        </div>
-                        <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/99.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/111.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/111.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-
-    <!--fin del 1 al 6-->
-    <!-- 7 al 12-->
-
-
-
-    <div class="container1">
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/20.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/20.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/19.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
-                        </div>
-                        <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/19.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/21.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/21.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--fin del 7 al 12-->
-
-
-
-
-
-
-    <div class="container1">
-
-
-        <div class="row">
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/23.png" alt="Neymar">
-                            <h2> <i class="fa fa-chevron-circle-down"></i> &nbsp NARUTO</h2>
-                        </div>
-                        <div class="back from-left">
-                            <h2 class="tituloin">NARUTO</h2>
-                            <h3>PRECIO : <del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/23.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option  value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <li class="des"> &nbsp Enviar pedido &nbsp </li>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/25.png" alt="Ronaldo">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp WALKING DEAD</h2>
-                        </div>
-                        <div class="back from-bottom">
-                            <h2 class="tituloin">WALKING DEAD</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/25.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="column">
-                <div class="card1">
-                    <div class="content">
-                        <div class="front">
-                            <img class="profile" width="250" height="250" src="imagenes/anime/33.png" alt="Messi">
-                            <h2> <i class="fa fa-chevron-circle-down"></i>&nbsp DRAGON BALL</h2>
-                        </div>
-                        <div class="back from-right">
-
-                            <h2 class="tituloin">DRAGON BALL</h2>
-                            <h3>PRECIO :<del>$ 1700</del> </h3>
-                            <h3>AHORA | $ 1400</h3>
-                            <div class="fot">
-                                <img class="tem-img" src="imagenes/anime/33.png" width="90" alt=""> &nbsp;
-                                <br>
-                                <br>
-                                <br>
-
-                                <form>
-                                    <br>
-
-                                    <label for="cars">Elegí:</label>
-
-                                    <select id="cars">
-                                        <option>Color</option>
-  <option value="BLANCO">BLANCO</option>
-  <option value="NEGRO">NEGRO</option>
-</select><br><br>
-                                    <label>Elegí:</label>
-                                    <select>
-     <option >Talle </option>                                    
-  <option value="s">Talle s </option>
-  <option value="m">Talle m</option>
-  <option value="l">Talle l</option>
-  <option value="xl">Talle xl</option>
-  <option value="xxl">Talle xxl</option>
-
-</select>
-                                </form>
-                            </div>
-                            <p class="des ">
-                                Después de elegir color y talle hace click en enviar pedido y nos comunicaremos con vos
-                            </p>
-
-                            <ul class="social-icon">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-
-                                <a href="">
-                                    <p class="des"> &nbsp Enviar pedido &nbsp</p>
-                                </a>
-
-
-                                <li><a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <span class="ir-arriba icon-arrow-up2"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></span>

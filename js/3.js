@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     var zindex = 10;
 
     $("div.card").click(function(e) {
@@ -61,3 +61,4 @@ $(document).ready(function() {
     });
 
 });
+/**pueba cards */
